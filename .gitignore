@@ -1,0 +1,88 @@
+# ─────────────────────────────────────────────────────────────────
+#  .gitignore — Konnect (Next.js Frontend + FastAPI Backend)
+# ─────────────────────────────────────────────────────────────────
+
+# ── Next.js ───────────────────────────────────────────────────────
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# ── Node ──────────────────────────────────────────────────────────
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+/coverage
+
+# ── Python / FastAPI Backend ──────────────────────────────────────
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Environment Files (NEVER commit secrets) ──────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+# Keep the example file (no real secrets)
+!.env.example
+!backend/.env.example
+
+# ── Database / Vector Store (old RAG files) ───────────────────────
+backend/data/
+backend/data/vector_store/
+*.json.bak
+
+# ── IDE & Editor ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+logs/
+*.pid
+
+# ── OS ────────────────────────────────────────────────────────────
+.DS_Store
+*.pem
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ── Vercel ────────────────────────────────────────────────────────
+.vercel
+
+# ── Misc ──────────────────────────────────────────────────────────
+repomix-output.xml
+*.bak
+*.tmp

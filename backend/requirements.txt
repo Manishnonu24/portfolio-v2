@@ -1,0 +1,20 @@
+# AI SQL Chatbot Backend — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Web Framework ──────────────────────────────────────────────────────────
+fastapi>=0.103.2
+uvicorn[standard]>=0.23.2
+
+# ── Database ───────────────────────────────────────────────────────────────
+sqlalchemy>=2.0.19
+pymysql>=1.1.0          # Sync MySQL driver for SQLAlchemy (simpler than aiomysql)
+
+# ── AI ─────────────────────────────────────────────────────────────────────
+openai>=1.30.0          # OpenAI Python SDK v1.x (gpt-4o-mini, gpt-4o, etc.)
+
+# ── Configuration ──────────────────────────────────────────────────────────
+pydantic>=2.4.2
+python-dotenv>=1.0.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+python-multipart>=0.0.6  # For form data (kept for future file endpoints)
