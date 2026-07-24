@@ -194,6 +194,14 @@ export default function Contact() {
             LinkedIn
           </a>
           <a
+            href="https://portfolio-v2-5cp24nzgo-manish-s-projects-76c7bb38.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-link"
+          >
+            Live Site (V2)
+          </a>
+          <a
             href="https://portfolio-two-rosy-12.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
